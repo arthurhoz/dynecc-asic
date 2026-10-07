@@ -1,0 +1,15 @@
+DESIGN_NAME: ecc_design
+VERILOG_FILES: 
+- dir::rtl/typedefs.sv
+- dir::rtl/ecc_design.sv
+- dir::rtl/MRSC_encoder.sv
+- dir::rtl/MRSC_decoder.sv
+- dir::rtl/TBEC_RSC_encoder.sv
+- dir::rtl/TBEC_RSC_decoder.sv
+
+PDK: ihp-sg13g2
+CLOCK_PORT: null
+
+PL_TARGET_DENSITY_PCT: 75
+
+USE_SLANG: true
