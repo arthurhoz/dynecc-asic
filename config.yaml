@@ -7,7 +7,6 @@ VERILOG_FILES:
 - dir::rtl/TBEC_RSC_encoder.sv
 - dir::rtl/TBEC_RSC_decoder.sv
 
-PDK: ihp-sg13g2
 CLOCK_PORT: null
 
 PL_TARGET_DENSITY_PCT: 75

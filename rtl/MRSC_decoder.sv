@@ -13,13 +13,12 @@ module MRSC_decoder (
     logic [2:0] sumSL;
     logic [1:0] quad1, quad2;
 
-    signal[3] = {data_in[31],  data_in[27],data_in[23],data_in[19]};
-
-    signal[2] = {data_in[30],data_in[26],data_in[22],data_in[18]};
-
-    signal[1] = {data_in[29],data_in[25],data_in[21],data_in[17]};
-
-    signal[0] = {data_in[28],data_in[24],data_in[20],data_in[16]};
+    signal = {
+      {data_in[31], data_in[27], data_in[23], data_in[19]},
+      {data_in[30], data_in[26], data_in[22], data_in[18]},
+      {data_in[29], data_in[25], data_in[21], data_in[17]},
+      {data_in[28], data_in[24], data_in[20], data_in[16]}
+    };
 
     linsin[3][1] = signal[3][3] ^ signal[3][1] ^ data_in[7];
     linsin[3][0] = signal[3][2] ^ signal[3][0] ^ data_in[6];
